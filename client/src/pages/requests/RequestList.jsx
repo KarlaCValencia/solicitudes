@@ -43,7 +43,7 @@ export default function RequestList() {
                     <td className="px-4 py-3 text-gray-600">{r.area_name}</td>
                     <td className="px-4 py-3"><StatusBadge status={r.status} /></td>
                     <td className="px-4 py-3 text-gray-400">
-                      {new Date(r.created_at).toLocaleDateString('es-CL')}
+                      {new Date(r.created_at).toLocaleDateString('es-MX')}
                     </td>
                   </tr>
                 ))}

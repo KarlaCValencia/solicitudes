@@ -86,7 +86,7 @@ export default function RequestDetail() {
           </div>
           <div>
             <dt className="text-gray-400">Creada</dt>
-            <dd className="text-gray-800">{new Date(request.created_at).toLocaleDateString('es-CL')}</dd>
+            <dd className="text-gray-800">{new Date(request.created_at).toLocaleDateString('es-MX')}</dd>
           </div>
         </dl>
 
