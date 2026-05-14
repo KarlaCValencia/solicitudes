@@ -30,6 +30,7 @@ export default function RequestList() {
                   <th className="px-4 py-3 font-medium">Área</th>
                   <th className="px-4 py-3 font-medium">Estado</th>
                   <th className="px-4 py-3 font-medium">Fecha</th>
+                  <th className="px-4 py-3 font-medium">Prioridad</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -45,6 +46,7 @@ export default function RequestList() {
                     <td className="px-4 py-3 text-gray-400">
                       {new Date(r.created_at).toLocaleDateString('es-MX')}
                     </td>
+                    <td className="px-4 py-3 text-gray-600">{r.priority}</td>
                   </tr>
                 ))}
               </tbody>
