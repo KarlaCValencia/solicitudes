@@ -36,4 +36,8 @@ app.use('/api/areas', areasRoutes)
 app.use('/api/categories', categoriesRoutes)
 app.use('/api/requests', requestsRoutes)
 
+const { errorHandler } = require('./middleware/errorHandler')
+
+app.use(errorHandler)
+
 module.exports = app
